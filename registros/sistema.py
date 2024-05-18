@@ -32,8 +32,6 @@ while True:
             dia = lerInt('Dia: ')
             mes = lerInt('Mês: ')
             cadastrarApresentacao(arqApresentacoes, tema, dia, mes)
-
-
         case 5:
             print(linha(42))
             print(f'{vermelho}Obrigado por utilizar o sistema!{limpaCor}')
