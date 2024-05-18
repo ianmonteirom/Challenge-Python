@@ -1,2 +1,0 @@
-Carros elétricos;30;5
-Pilotos da fórmula e;6;7

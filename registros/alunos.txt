@@ -1,3 +1,0 @@
-Ian;22;1ESPH
-Jorge;19;1ESPB
-Rafael;20;1ESPA
