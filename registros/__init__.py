@@ -18,6 +18,11 @@ def cabecalho(txt):
     print(linha(42))
 
 
+# Lista com as opções que serão passadas como parâmetro para a função menu()
+opcoes = ['Ver Registro de Alunos', 'Cadastrar novo Aluno', 'Ver Apresentações Agendadas', 'Agendar nova Apresentação',
+          'Sair do Sistema']
+
+
 # Função que printa o menu de opções do sistema
 def menu(opcoes):
     cabecalho('Sistema de Registro para as Escolas')
@@ -69,6 +74,33 @@ def criarArquivo(nome):
 
 # Declaração de uma variável para facilitar na formatação dos dados que aparecerão no console
 espaco = ''
+
+
+def lerEscolha():
+    while True:
+        menu(opcoes)
+        opcao = lerInt(f'{verde}Sua escolha: {limpaCor}')
+        match opcao:
+            case 1:
+                lerArquivo(arqAlunos)
+            case 2:
+                cabecalho('Cadastrar novo Aluno')
+                nome = str(input('Nome do aluno: ')).strip().capitalize()
+                idade = lerInt('Idade do aluno: ')
+                turma = str(input('Turma do aluno: ')).strip().upper()
+                cadastrarAluno(arqAlunos, nome, idade, turma)
+            case 3:
+                lerArquivo(arqApresentacoes)
+            case 4:
+                cabecalho('Agendar nova Apresentação')
+                tema = str(input('Tema/Conteúdo da Apresentação: ')).strip().capitalize()
+                dia = lerInt('Dia: ')
+                mes = lerInt('Mês: ')
+                cadastrarApresentacao(arqApresentacoes, tema, dia, mes)
+            case 5:
+                print(linha(42))
+                print(f'{vermelho}Obrigado por utilizar o sistema!{limpaCor}')
+                break
 
 
 # Função que lê o conteúdo de um arquivo
