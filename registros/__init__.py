@@ -29,8 +29,8 @@ def menu(opcoes):
 def lerInt(txt):
     try:
         n = int(input(txt))
-    except:
-        print(f'{vermelho}Por favor, digite um número inteiro.{limpaCor}')
+    except ValueError:
+        print(f'{vermelho}Por favor, digite uma opção válida.{limpaCor}')
     else:
         return n
 

@@ -36,5 +36,5 @@ while True:
             print(linha(42))
             print(f'{vermelho}Obrigado por utilizar o sistema!{limpaCor}')
             break
-        case _:
-            print(f'{vermelho}Por favor, escolha uma opção válida!{limpaCor}')
+        # case _:
+        #   print(f'{vermelho}Por favor, escolha uma opção válida!{limpaCor}')
