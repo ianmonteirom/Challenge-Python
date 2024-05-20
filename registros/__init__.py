@@ -71,6 +71,32 @@ def criarArquivo(nome):
 espaco = ''
 
 
+def lerEscolha(opc, conti):
+     match opcao:
+        case 1:
+            lerArquivo(arqAlunos)
+        case 2:
+            cabecalho('Cadastrar novo Aluno')
+            nome = str(input('Nome do aluno: ')).strip().capitalize()
+            idade = lerInt('Idade do aluno: ')
+            turma = str(input('Turma do aluno: ')).strip().upper()
+            cadastrarAluno(arqAlunos, nome, idade, turma)
+        case 3:
+            lerArquivo(arqApresentacoes)
+        case 4:
+            cabecalho('Agendar nova Apresentação')
+            tema = str(input('Tema/Conteúdo da Apresentação: ')).strip().capitalize()
+            dia = lerInt('Dia: ')
+            mes = lerInt('Mês: ')
+            cadastrarApresentacao(arqApresentacoes, tema, dia, mes)
+        case 5:
+            print(linha(42))
+            print(f'{vermelho}Obrigado por utilizar o sistema!{limpaCor}')
+            conti = False
+        case _:
+            print(f'{vermelho}Por favor, escolha uma opção válida!{limpaCor}')
+
+
 # Função que lê o conteúdo de um arquivo
 def lerArquivo(nome):
     try:
@@ -114,3 +140,4 @@ def cadastrarApresentacao(arquivo, tema='desconhecido', dia=0, mes=0):
     else:
         a.write(f'{tema};{dia};{mes}\n')
         a.close()
+
