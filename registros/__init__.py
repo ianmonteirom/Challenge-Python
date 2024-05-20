@@ -47,6 +47,13 @@ arqAlunos = 'alunos.txt'
 arqApresentacoes = 'apresentacoes.txt'
 
 
+def validarArquivos(arqal, arqap):
+    if not existeArquivo(arqal):
+        criarArquivo(arqal)
+    if not existeArquivo(arqap):
+        criarArquivo(arqap)
+
+
 # Função que checa se um arquivo existe ou não, retornando True se existe ou False caso não
 def existeArquivo(nome):
     try:

@@ -2,11 +2,8 @@
 
 from registros import *
 
-# Caso os arquivos necessários para registrar os dados não existam, cria automaticamente
-if not existeArquivo(arqAlunos):
-    criarArquivo(arqAlunos)
-if not existeArquivo(arqApresentacoes):
-    criarArquivo(arqApresentacoes)
+# Função para caso os arquivos necessários para registrar os dados não existam, cria automaticamente
+validarArquivos(arqAlunos, arqApresentacoes)
 
 # Função com o conteúdo do programa principal
 lerEscolha()
