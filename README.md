@@ -1,4 +1,6 @@
-##![image]
+![image](https://github.com/ianmonteirom/Challenge-Python/assets/152393807/20e9b38f-a3ee-4b89-8488-549bc2940ddb)
+
+
 # Python - Challenge - DataSphere 
 Bem-vindo a nossa sprint de Python!
 È um imenso prazer apresentar este projeto!
