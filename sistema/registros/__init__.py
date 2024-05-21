@@ -30,7 +30,7 @@ def menu(opcoes):
         print(f'{amarelo}{i + 1} {limpaCor}- {azul}{opcoes[i]}{limpaCor}')
 
 
-# Função que lê um input de um número inteiro sem dar erro e crashar o programa
+# Função que lê um input de um número inteiro sem dar erro vermelho e crashar o programa
 def lerInt(txt):
     try:
         n = int(input(txt))
