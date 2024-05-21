@@ -16,6 +16,6 @@ formada pelos alunos:
 
 # Cliente 
 - Tech Mahindra
--Empresa indiana multinacional de serviços de tecnologia da informação (TI) e consultoria, com sede em Pune, na Índia.
--Fundada em 1986, faz parte do Grupo Mahindra, um dos principais conglomerados empresariais da Índia.
+- Empresa indiana multinacional de serviços de tecnologia da informação (TI) e consultoria, com sede em Pune, na Índia.
+- Fundada em 1986, faz parte do Grupo Mahindra, um dos principais conglomerados empresariais da Índia.
 
